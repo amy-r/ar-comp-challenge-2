@@ -1,0 +1,268 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #727272;
+}
+
+header {
+  background-color: #2B2B2B;
+  height: 100px;
+  width: 100%
+  margin: 0;
+  color: #FFFFFF;
+}
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.admin-logo {
+  float: right;
+  margin-right: 0;
+}
+.admin {
+  margin-left: 45%;
+  color: #FFFFFF;
+  font-size: 80%;
+  display: inline-block;
+}
+
+.admin:hover{
+  color: #E2AA33;
+}
+
+#person {
+  height: 10px;
+}
+.logo {
+  height: 60px;
+  margin-top: 0;
+  padding-top: 10px; 
+}
+
+.link-list {
+  display: inline-block;
+  style: none;
+}
+
+li {
+  list-style: none;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 35px 5px;
+  vertical-align: text-top;
+}
+
+li:hover{
+  color: #E2AA33;
+}
+
+ul{
+  display: inline-block;
+  list-style: none;
+}
+
+ul img{
+  height: 15px;
+  padding: 3px 10px;
+}
+.title{
+  margin-left: 20px;
+  padding-top: 10px;
+  color: #2B2B2B;
+  font-weight: 500;
+
+}
+.cards {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-columns: minmax(300px, auto);
+  align-content: space-between;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 240%;
+}
+
+main {
+  background-color: #EFEFEF;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+article {
+  width: 300px;
+  height: 420px;
+  background-color: #FFFFFF;
+  margin: 0 auto 80px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.denial .picture{
+  background-image: url(images/denial-cropped.png);
+}
+.anger .picture{
+  background-image: url('images/anger-cropped.png');
+}
+.apathy .picture{
+  background-image: url('images/apathy-cropped.png');
+}
+.emptiness .picture{
+  background-image: url('images/emptiness-cropped.png');
+}
+.accountability .picture{
+  background-image: url('images/accountability-cropped.png');
+}
+.reformation .picture{
+  background-image: url('images/reformation-cropped.png');
+}
+.forgiveness .picture{
+  background-image: url('images/forgiveness-cropped.png');
+}
+.resurrection .picture{
+  background-image: url('images/ressurection-cropped.png');
+}
+
+.picture {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.play {
+  height: 50px;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+h2{
+font-size: 120%;
+}
+
+.date {
+}
+
+.picture h3 {
+  color: #FFFFFF;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.picture .number { 
+color: #FFFFFF;
+position: absolute;
+top: 20px;
+right: 20px;
+}
+
+.name-date h2{
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+.number {
+  font-size: 240%;
+}
+.date{
+  font-size:75%;
+  color: #B7B8B9;
+  margin-top: 0;
+  margin-left: 10px;
+}
+.picture .number {
+  margin-top: 20px;
+}
+.website {
+  color:#2B2B2B;
+  background-color: #EFEFEF;
+  margin: 0 10px 0 10px;
+  height: 30px;
+  padding: 15px 45px 2px 45px;
+  font-size: 80%;
+}
+
+.playlist-track {
+  margin-left: 10px;
+}
+
+.playlist-track h3{
+  margin-bottom: 0;
+}
+.playlist-track h2{
+  margin-top: 2px;
+}
+
+.track-number{
+  margin-left: 10px;
+}
+.track-number h3{
+  margin-bottom: 2px; 
+}
+p.number.track{
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #E2AA33;
+}
+
+@media screen and (max-width: 1234px){
+  .cards {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+@media screen and (max-width: 915px){
+  .cards {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 690px){
+  li {visibility: collapse;
+  }
+
+  .link-list {
+  background-image: url('images/playlist-white.svg');
+  height: 40px;
+  width: 43px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  padding: 2px 0;
+  margin-left: 5%;
+  margin-top: 30px;
+
+  }
+}
+
+@media screen and (max-width: 609px){
+  .cards {
+    grid-template-columns: 100%;
+  }
+  .admin {
+    display: none;
+  }
+  .logo {
+    margin-right: 10px;
+  }
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+main {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+  article {
+    margin-bottom: 30px;
+  }
+}
